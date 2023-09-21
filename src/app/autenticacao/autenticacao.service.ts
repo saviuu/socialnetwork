@@ -14,7 +14,7 @@ export class AutenticacaoService {
 
    autenticar(credUsuario: LoginModel): Observable<any>
    {
-    return this._httpClient.post('http://localhost:3000/user/login', {
+      return this._httpClient.post('http://localhost:3000/user/login', {
       userName: credUsuario.usuario,
       password: credUsuario.senha
     });
